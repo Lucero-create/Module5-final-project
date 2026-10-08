@@ -10,8 +10,8 @@ async function getMovies(searchTerm) {
     <img src="${movie.Poster}" alt="${movie.Title}">
     <h3>${movie.Title}</h3>
     <p>${movie.Year}</p>
-    .join('')
   </div>`})
+  .slice(0, 5).join('')
 }
 
 
