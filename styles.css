@@ -13,7 +13,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 nav {
   height: 80px;
   display: flex;
@@ -251,7 +250,6 @@ h2 {
   color: rgb(4, 4, 4);
 }
 
-
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 
 @media (max-width: 768px) {
@@ -271,5 +269,13 @@ h2 {
   .black-txt {
     font-size: 10px;
   }
-} 
-
+  .movie-car img {
+    height: auto;
+  }
+  #searchInput {
+    padding: 16px 24px;
+  }
+  .logo {
+    width: 100px;
+  }
+}
