@@ -5,14 +5,27 @@ const moviesWrapper = document.querySelector("#movieWrapper");
 async function getMovies(searchTerm) {
   const response = await fetch(`http://www.omdbapi.com/?apikey=9b5d9901&s=${searchTerm}`);
   const data =await response.json();
+    let year = data.Search;
+    if (year) {
+    if (filter === "MOST RECENT"){
+    console.log(filter);
+    data.Search.sort((a, b) => parseInt(b.Year) - parseInt(a.Year)) }
+  else if (filter === "OLDEST") {
+    data.Search.sort((b, a) => parseInt (a.year) - parseInt(b.year))
+  } 
   console.log(data.Search);
   moviesWrapper.innerHTML = data.Search.map ((movie) => { return `<div class="movie-card">
     <img src="${movie.Poster}" alt="${movie.Title}">
     <h3>${movie.Title}</h3>
     <p>${movie.Year}</p>
   </div>`})
-  .slice(0, 6).join('')
+
+  .slice(0, 6).join('');
+    } else {
+      console.log("No movies found.");
+    }
 }
+
 
 
 

@@ -245,8 +245,9 @@ h2 {
 }
 .black-txt {
   justify-content: flex-start;
-  top: 10%;
+  top: 5%;
   left: 5%;
+  font-size: 40px;
   color: rgb(4, 4, 4);
 }
 
