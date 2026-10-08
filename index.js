@@ -1,4 +1,4 @@
-//http://www.omdbapi.com/?apikey=9b5d9901&s=marvel
+//https://www.omdbapi.com/?apikey=9b5d9901&s=marvel
 const moviesWrapper = document.querySelector("#movieWrapper");
 
 
