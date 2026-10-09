@@ -13,29 +13,24 @@
       <div class="nav__container">
       <img  class="logo" src="./assets-folder/MovieLogo.png" alt="">
       <ul class="nav__links">
-        <li><a href="#" class="nav__link">Home</a></li>
-        <li><a href="#" class="nav__link">Find your Movie</a></li>
-        <li><a href="#" 
-        class="nav__link nav__link--primary">Contact</a></li>
-        </ul>
-      <button class="btn__menu" onclick="openMenu()"></button>
-      <div class="menu__backdrop">
-        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-          <i class="fas fa-times"></i>
-        </button>
-        <ul>
-          <li class="menu__links">
-            <li class="menu_-list">
-            <a href="#" class="menu__link">Home</a>
-          </li><li class="menu__list">
-            <a href="#features" class="menu__link">Books</a>
-          </li>
-          <li class="menu__list">
-            <a href="menu__link no-cursor" onclick="closeMenu()">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+ 
+        <nav>
+        <div class="off-screen-menu">
+          <ul>
+            <li>Home</li>
+            <li>Find your Movie</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        </nav>
+         <nav>
+          <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+          </div>
+        </nav>
+      
   </section>
 
       <div class="header__container">
@@ -46,14 +41,16 @@
             <input type="text" id="searchInput" placeholder="Search by title"
             oninput="onSearchChange(event)">
           </div>
+          
     </figure>
+    </div>
     <section class="movie__list">
       <div class="search">
       <h2 class="search-info">
       <span class="black-txt">Search results</span>
-      <select id="filter">
+      <select id="filter" onchange="onFilterChange()">
         <option value="disable selected">Sort</option>
-        <option value="RECENT">Most Recent</option>
+        <option value="MOST RECENT">Most Recent</option>
         <option value="OLDEST">Oldest First</option>
       </select>
       <span class="search-term"><span class="searchName"></span>
