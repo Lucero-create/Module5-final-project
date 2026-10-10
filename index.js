@@ -22,7 +22,7 @@ async function getMovies(searchTerm) {
       console.log(filter);
       data.Search.sort((a, b) => parseInt(b.Year) - parseInt(a.Year));
     } else if (filter === "OLDEST") {
-      data.Search.sort((b, a) => parseInt(a.Year) - parseInt(b.Year));
+      data.Search.sort((a, b) => parseInt(a.Year) - parseInt(b.Year));
     }
     console.log(data.Search);
     moviesWrapper.innerHTML = data.Search.map((movie) => {
@@ -40,7 +40,7 @@ async function getMovies(searchTerm) {
   }
 }
 function onFilterChange() {
-  const searchTerm = document.querySelector("#searchinput").value;
+  const searchTerm = document.querySelector("#searchInput").value;
   getMovies(searchTerm);
 }
 
