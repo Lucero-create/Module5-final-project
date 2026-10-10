@@ -371,7 +371,7 @@ h2 {
     overflow: hidden;
   }
   h1 {
-    font-size: 24px;
+    font-size: 40px;
   }
   .header__description {
     font-size: 40px;
@@ -409,11 +409,11 @@ h2 {
   #movieWrapper {
     grid-template-columns: 1fr;
   }
-.header__description {
-  font-size: 20px;
-}
-#searchInput {
-  width: 85vw;
-  padding: 14px 16px
-}
+  .header__description {
+    font-size: 18px;
+  }
+  #searchInput {
+    width: 85vw;
+    padding: 14px 16px;
+  }
 }
