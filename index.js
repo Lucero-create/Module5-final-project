@@ -13,7 +13,7 @@ const moviesWrapper = document.querySelector("#movieWrapper");
 async function getMovies(searchTerm) {
   const filter = document.querySelector("#filter").value;
   const response = await fetch(
-    `http://www.omdbapi.com/?apikey=9b5d9901&s=${searchTerm}`,
+    `https://www.omdbapi.com/?apikey=9b5d9901&s=${searchTerm}`,
   );
   const data = await response.json();
   let year = data.Search;
