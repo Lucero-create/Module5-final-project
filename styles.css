@@ -228,6 +228,7 @@ header {
   font-size: 60px;
   color: #121213;
   text-align: center;
+  white-space: nowrap;
   z-index: 10;
 }
 .search-bar {
@@ -240,7 +241,6 @@ header {
 }
 h1 {
   position: absolute;
-  font-size: 100px;
   color: black;
   text-align: center;
 }
@@ -375,9 +375,11 @@ h2 {
   }
   .header__description {
     font-size: 40px;
+    max-width: 100%;
+    top: 25%;
   }
   .search-bar {
-    align-self: center;
+    align-items: center;
     width: 60%;
     height: auto;
   }
@@ -411,9 +413,11 @@ h2 {
   }
   .header__description {
     font-size: 18px;
+    top: 20%;
   }
   #searchInput {
     width: 85vw;
     padding: 14px 16px;
+    align-items: center;
   }
 }
