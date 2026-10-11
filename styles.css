@@ -246,12 +246,10 @@ h1 {
 }
 
 h2 {
-  position: absolute;
+  margin: 0;
   font-size: 50px;
   color: #070808;
-  text-align: center;
-  margin-top: 100px;
-  margin-left: 24px;
+
 }
 
 .btn {
@@ -320,13 +318,14 @@ h2 {
 
 .search {
   display: flex;
+  justify-content: space-between;
+  padding: 24px;
   align-items: center;
   background-color: #343d9d;
 }
 
 .search.info {
-  display: flex;
-  align-items: flex-start;
+  margin: 0;
 }
 
 .footer {
@@ -395,7 +394,7 @@ h2 {
   }
 
   .search {
-    max-height: 10px;
+   
   }
   #movieWrapper {
     grid-template-columns: repeat(2, 1fr);
