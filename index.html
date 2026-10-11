@@ -41,29 +41,31 @@
             <input type="text" id="searchInput" placeholder="Search by title"
             oninput="onSearchChange(event)">
           </div>
-          
-    </figure>
+        </section>
+      </figure>
     </div>
-    <section class="movie__list">
-      <div class="search">
+
+  <section class="movie__list">
+    <div class="search">
       <h2 class="search-info">
-      <span class="black-txt">Search results</span>
+      <span class="black-txt">Search results</span></h2>
       <select id="filter" onchange="onFilterChange()">
         <option value="disable selected">Sort</option>
         <option value="MOST RECENT">Most Recent</option>
         <option value="OLDEST">Oldest First</option>
       </select>
-      <span class="search-term"><span class="searchName"></span>
-      </h2>
       </div>
-      
+
+
+
+
       <section class="movie-list">
-      
       <div id="movieWrapper">
-        <div class="movie-card"></div>
+      <div class="movie-card"></div>
       </div>
-    </section>
+   
   </section>
+</section>
    <section class="footer"></section>
 </body>
 </html>
